@@ -26,7 +26,11 @@ export default function AddressCard({ address }: { address: Address }) {
           {address.criteria.map((criterion) => (
             <span
               key={criterion.id}
-              className="text-xs font-medium rounded-full bg-olive/10 text-olive px-3 py-1"
+              className={
+                criterion.slug === "de-saison"
+                  ? "text-xs font-medium rounded-full bg-sauge/15 text-sauge-dark px-3 py-1"
+                  : "text-xs font-medium rounded-full bg-terracotta/10 text-terracotta-dark px-3 py-1"
+              }
             >
               {criterion.label}
             </span>

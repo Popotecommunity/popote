@@ -93,19 +93,27 @@ export default function ExplorerClient({
 
       {/* Filtres critères */}
       <div className="mt-4 flex flex-wrap gap-2">
-        {criteria.map((criterion) => (
-          <button
-            key={criterion.id}
-            onClick={() => toggleCriterion(criterion.slug)}
-            className={`rounded-full px-4 py-2 text-xs font-medium border transition-colors ${
-              activeCriteria.includes(criterion.slug)
-                ? "bg-terracotta text-cream border-terracotta"
-                : "border-line text-ink/60 hover:border-terracotta"
-            }`}
-          >
-            {criterion.label}
-          </button>
-        ))}
+        {criteria.map((criterion) => {
+          const isSauge = criterion.slug === "de-saison";
+          const isActive = activeCriteria.includes(criterion.slug);
+          return (
+            <button
+              key={criterion.id}
+              onClick={() => toggleCriterion(criterion.slug)}
+              className={`rounded-full px-4 py-2 text-xs font-medium border transition-colors ${
+                isActive
+                  ? isSauge
+                    ? "bg-sauge text-cream border-sauge"
+                    : "bg-terracotta text-cream border-terracotta"
+                  : isSauge
+                    ? "border-line text-ink/60 hover:border-sauge"
+                    : "border-line text-ink/60 hover:border-terracotta"
+              }`}
+            >
+              {criterion.label}
+            </button>
+          );
+        })}
       </div>
 
       <div className="mt-6 flex items-center justify-between">

@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f2e9;
-  --foreground: #2c2b26;
-  --color-cream: #f7f2e9;
-  --color-cream-dark: #efe7d8;
-  --color-olive: #35431f;
-  --color-olive-light: #4a5a2e;
-  --color-terracotta: #c1502e;
-  --color-terracotta-dark: #a33f22;
-  --color-ink: #2c2b26;
-  --color-line: #e2d8c3;
+  --background: #fcfbf9;
+  --foreground: #1f1e1b;
+  --color-cream: #fcfbf9;
+  --color-cream-dark: #f1efea;
+  --color-olive: #1f1e1b;
+  --color-olive-light: #34322d;
+  --color-terracotta: #b85c3e;
+  --color-terracotta-dark: #8f4530;
+  --color-sauge: #7a9b76;
+  --color-sauge-dark: #4f6a4c;
+  --color-ink: #1f1e1b;
+  --color-line: #eceae4;
 }
 
 @theme inline {
@@ -22,6 +24,8 @@
   --color-olive-light: var(--color-olive-light);
   --color-terracotta: var(--color-terracotta);
   --color-terracotta-dark: var(--color-terracotta-dark);
+  --color-sauge: var(--color-sauge);
+  --color-sauge-dark: var(--color-sauge-dark);
   --color-ink: var(--color-ink);
   --color-line: var(--color-line);
   --font-sans: var(--font-inter);
