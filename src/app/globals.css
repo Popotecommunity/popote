@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fcfbf9;
-  --foreground: #1f1e1b;
-  --color-cream: #fcfbf9;
-  --color-cream-dark: #f1efea;
-  --color-olive: #1f1e1b;
-  --color-olive-light: #34322d;
+  --background: #fbf6ef;
+  --foreground: #2a2620;
+  --color-cream: #fbf6ef;
+  --color-cream-dark: #f2e9da;
+  --color-olive: #b85c3e;
+  --color-olive-light: #9c4a32;
   --color-terracotta: #b85c3e;
-  --color-terracotta-dark: #8f4530;
+  --color-terracotta-dark: #9c4a32;
   --color-sauge: #7a9b76;
   --color-sauge-dark: #4f6a4c;
-  --color-ink: #1f1e1b;
-  --color-line: #eceae4;
+  --color-ink: #2a2620;
+  --color-line: #eee3d3;
 }
 
 @theme inline {
@@ -80,7 +80,7 @@ h1, h2, h3, h4,
 }
 
 .leaflet-control-attribution {
-  background: rgba(247, 242, 233, 0.85) !important;
+  background: rgba(251, 246, 239, 0.85) !important;
   color: var(--color-ink) !important;
   border-radius: 6px 0 0 0;
 }

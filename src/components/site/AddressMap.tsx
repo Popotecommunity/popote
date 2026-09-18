@@ -11,8 +11,8 @@ function makePinIcon(emoji: string | null) {
     html: `
       <div style="
         width: 36px; height: 36px;
-        background: linear-gradient(160deg, #c1502e, #a33f22);
-        border: 2.5px solid #f7f2e9;
+        background: linear-gradient(160deg, #b85c3e, #9c4a32);
+        border: 2.5px solid #fbf6ef;
         border-radius: 50% 50% 50% 0;
         transform: rotate(-45deg);
         box-shadow: 0 3px 8px rgba(44,43,38,0.35);
@@ -47,7 +47,7 @@ export default function AddressMap({
         center={center}
         zoom={13}
         scrollWheelZoom={false}
-        style={{ height: "100%", width: "100%", background: "#f7f2e9" }}
+        style={{ height: "100%", width: "100%", background: "#fbf6ef" }}
       >
         <TileLayer
           attribution='&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
