@@ -54,6 +54,13 @@ export default async function AdminLoginPage({
             Se connecter
           </button>
         </form>
+
+        <a
+          href="/admin/mot-de-passe-oublie"
+          className="mt-4 block text-center text-sm text-ink/50 hover:text-olive"
+        >
+          Mot de passe oublié ?
+        </a>
       </div>
     </main>
   );
