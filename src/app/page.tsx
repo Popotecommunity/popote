@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 import AddressCard from "@/components/site/AddressCard";
+import HeroSearch from "@/components/site/HeroSearch";
 import { getCities, getFeaturedAddresses } from "@/lib/data";
 
 const convictions = [
@@ -52,23 +53,7 @@ export default async function Home() {
             vous.
           </p>
 
-          <form
-            action="/explorer/lyon"
-            className="mt-8 flex max-w-lg rounded-full border border-line bg-white overflow-hidden"
-          >
-            <input
-              type="text"
-              placeholder="Une ville, un quartier, une adresse…"
-              className="flex-1 px-5 py-3 text-sm outline-none bg-transparent"
-              disabled
-            />
-            <button
-              type="submit"
-              className="bg-olive text-cream px-6 py-3 text-sm font-medium hover:bg-olive-light transition-colors"
-            >
-              Explorer
-            </button>
-          </form>
+          <HeroSearch cities={cities} />
 
           <div className="mt-4 flex items-center gap-3 text-sm text-ink/60">
             <span>On vous emmène ?</span>
