@@ -22,11 +22,13 @@ export default async function SoumissionsPage() {
       <h1 className="font-serif text-3xl text-ink">Soumissions</h1>
       <p className="mt-1 text-sm text-ink/60 max-w-xl">
         Propositions envoyées via le formulaire public. Valider une soumission
-        ne crée pas encore automatiquement la fiche — utilisez ensuite{" "}
-        <Link href="/admin/adresses/nouvelle" className="text-olive hover:underline">
-          Nouvelle adresse
+        publie directement la fiche sur le site (la ville est créée si elle
+        n&rsquo;existe pas encore, la catégorie est devinée automatiquement).
+        Pense à repasser ensuite dans{" "}
+        <Link href="/admin/adresses" className="text-olive hover:underline">
+          Adresses
         </Link>{" "}
-        pour la publier avec les bons critères.
+        pour ajuster les critères, le prix ou les autres détails.
       </p>
 
       <div className="mt-8 space-y-4">
